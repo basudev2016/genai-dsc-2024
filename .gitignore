@@ -1,0 +1,5 @@
+# Ignore all .png files
+*.png
+
+# Ignore the virtual environment directory
+gaifndtion/
