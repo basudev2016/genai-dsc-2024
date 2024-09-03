@@ -10,7 +10,6 @@ pipeline = pipeline.to("cpu")  # Ensures the model runs on CPU
 
 # Define your text prompt
 prompt = "A fantasy landscape with mountains and a river"
-
 # prompt = "A dog jumpong over a fence"
 
 # Generate the image
