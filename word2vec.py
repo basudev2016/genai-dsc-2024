@@ -28,8 +28,8 @@ words = list(word2vec_model.wv.index_to_key)
 print(f"Vocabulary: {words}\n")
 
 # Get the embedding vector for a specific word, e.g., 'dog'
-dog_vector = word2vec_model.wv['dog']
-print(f"Embedding vector for 'dog':\n{dog_vector}\n")
+dog_vector = word2vec_model.wv['loyal']
+print(f"Embedding vector for 'loyal':\n{dog_vector}\n")
 
 # Visualize word embeddings using PCA (reduce to 2D for plotting)
 def plot_embeddings(model):

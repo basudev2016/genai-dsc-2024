@@ -9,7 +9,9 @@ import tensorflow_hub as hub
 elmo = hub.load("https://tfhub.dev/google/elmo/3")
 
 # Define a sample sentence for testing
-sentences = ["I love machine learning.", "ELMo embeddings capture syntax and semantics.","Deep learning ia awesome"]
+sentences = ["I love machine learning.", \
+             "ELMo embeddings capture syntax and semantics.",\
+                "Deep learning ia awesome"]
 
 # Compute ELMo embeddings
 elmo_embeddings = elmo.signatures["default"](tf.constant(sentences))["elmo"]

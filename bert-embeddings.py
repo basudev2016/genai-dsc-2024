@@ -8,7 +8,9 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertModel.from_pretrained('bert-base-uncased')
 
 # Sample input text
-sentences = ["I love machine learning.", "ELMo embeddings capture syntax and semantics.","Deep learning ia awesome"]
+sentences = ["I love machine learning.", \
+             "ELMo embeddings capture syntax and semantics.",\
+                "Deep learning ia awesome."]
 
 # Tokenize input text
 inputs = tokenizer(sentences, return_tensors='pt', padding=True, truncation=True)
