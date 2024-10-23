@@ -3,3 +3,4 @@ pymupdf
 beautifulsoup4
 langchain
 langchain_openai
+flask

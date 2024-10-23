@@ -1,9 +1,8 @@
-from langchain.llms import OpenAI  # Correct import from Langchain
+from langchain_openai import OpenAI  # Correct import from Langchain
 from langchain.prompts import PromptTemplate
 
 # Read the prompt from the 'website_text.txt' file
-with open('website_text.txt', 'r') as file:
-    prompt = file.read()
+prompt = open('website_text.txt','r').read()
 
 # Define the hotel assistant template
 hotel_assistant_template = prompt + """
@@ -23,7 +22,7 @@ hotel_assistant_prompt_template = PromptTemplate(
 )
 
 # Initialize the LLM (using Langchain's OpenAI integration)
-llm = OpenAI(model_name='gpt-3.5-turbo', temperature=0)
+llm = OpenAI(model ='gpt-3.5-turbo-instruct', temperature=0)
 
 # Use the new chaining method with the pipe (`|`) operator
 llm_chain = hotel_assistant_prompt_template | llm
