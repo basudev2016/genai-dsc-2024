@@ -3,7 +3,7 @@ from scipy.io.wavfile import write
 
 # Parameters for the sound wave
 sample_rate = 44100  # Samples per second
-duration = 2.0       # Duration in seconds
+duration = 4.0       # Duration in seconds
 frequency = 440.0    # Frequency in Hz (A4 note)
 
 # Generate the time points
